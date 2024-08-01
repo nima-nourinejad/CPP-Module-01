@@ -1,4 +1,4 @@
-NAME = harl
+NAME = harlFilter
 CXX = c++
 RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror
