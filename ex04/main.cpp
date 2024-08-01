@@ -3,21 +3,6 @@
 #include <sstream>
 #include <string>
 
-// void test(void) {
-//   std::string fileName = "test.txt";
-//   std::string content = "ABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEF"
-//                         "ABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEF"
-//                         "ABCDEFABCDEFABCDEFABCDEFABCDEFABCDEFABCDEF";
-//   std::ofstream file(fileName.c_str());
-//   file << content;
-//   file.close();
-// }
-// #include <cstdio>
-// void removeFiles(void) {
-//   std::remove("test.txt");
-//   std::remove("test.txt.replace");
-// }
-
 int main(int argc, char **argv) {
   if (argc != 4) {
     std::cerr << "Provide three inputs in the following order: a filename and "
