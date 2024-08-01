@@ -7,10 +7,11 @@ SRCS = main.cpp \
 OBJS = $(SRCS:.cpp=.o)
 
 # Variables for testing
-TEST = test
-TSRC = test.cpp
+# TEST = test
+# TSRC = test.cpp
 
-.PHONY: all clean fclean re c98 test rmtest
+.PHONY: all clean fclean re c98
+#.PHONY test rmtest
 
 all: $(NAME)
 
@@ -31,9 +32,9 @@ re: fclean all
 c98: CXXFLAGS += -std=c++98
 c98: re
 
-test: $(TSRC)
-	@$(CXX) $(CXXFLAGS) $(TSRC) -o $(TEST)
-	@./$(TEST)
+# test: $(TSRC)
+# 	@$(CXX) $(CXXFLAGS) $(TSRC) -o $(TEST)
+# 	@./$(TEST)
 
-rmtest:
-	@$(RM) $(TEST) "test.txt" "test.txt.replace"
+# rmtest:
+# 	@$(RM) $(TEST) "test.txt" "test.txt.replace"
