@@ -15,6 +15,9 @@ int main(int argc, char **argv) {
     if (level == levels[index])
       break;
   }
+  if (index != 4) {
+	std::cout << "[ " << level << " ]" << std::endl;
+  }
   switch (index) {
   case 0:
     harl.complain("DEBUG");
