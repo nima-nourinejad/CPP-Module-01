@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
       break;
     }
     result << content.substr(start, find - start) << s2;
-    start = find + std::string(s2).length();
+    start = find + std::string(s1).length();
   }
   std::stringstream replaceName;
   replaceName << fileName << ".replace";
